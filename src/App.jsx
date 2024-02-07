@@ -14,6 +14,8 @@ function App() {
   }, []);
 
   const consultarAPI = async () => {
+    //mostrar el spinner
+    setMostrarSpinner(true);
     //hacer una peticion get a la api
     const respuesta = await fetch(
       "https://thesimpsonsquoteapi.glitch.me/quotes"
